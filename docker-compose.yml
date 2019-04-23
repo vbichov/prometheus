@@ -35,6 +35,15 @@ services:
 #        constraints:
 #          - node.hostname == ${HOSTNAME}
 
+  python-dummy-app:
+      image: vitalyb/python-app
+      ports:
+        - 5000:5000
+        - 9000:9000
+      networks:
+      - back-tier
+    restart: always
+
   node-exporter:
     image: prom/node-exporter
     volumes:
