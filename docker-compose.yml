@@ -42,7 +42,7 @@ services:
         - 9000:9000
       networks:
       - back-tier
-    restart: always
+      restart: always
 
   node-exporter:
     image: prom/node-exporter
