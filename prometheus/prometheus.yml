@@ -68,5 +68,5 @@ scrape_configs:
   - job_name: 'dummy-python-app'
     static_configs:
          - targets: ['python-dummy-app:9000']
-           metrics_path: '/'
+          
      
